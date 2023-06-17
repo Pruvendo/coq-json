@@ -1,0 +1,6 @@
+(coq.theory
+ (name CoqJson)
+ (package CoqJson) 
+)
+
+(include_subdirs no)

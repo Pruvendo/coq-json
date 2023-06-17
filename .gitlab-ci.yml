@@ -1,0 +1,12 @@
+stages:
+  - build
+before_script:
+  - cat /etc/os-release
+
+building job:
+  stage: build
+  script:
+    - pwd
+    - cd ../io && opam install .
+    - cd ../system && opam install .
+    - dune clean && dune b
